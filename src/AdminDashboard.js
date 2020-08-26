@@ -12,33 +12,32 @@ import { db, auth } from "./firebase";
 import { useHistory } from "react-router-dom";
 
 function AdminDashboard() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [number, setNumber] = useState("");
   const [query, setQuery] = useState([]);
-  const [status, setStatus] = useState("");
-  const [timestamp, setTimestamp] = useState("");
   const history = useHistory();
   const [phase, setPhase] = useState("All");
 
   useEffect(() => {
-    if (phase == "All") {
-      db.collection("Queris")
-        .orderBy("timestamp", "desc")
-        .onSnapshot((snapshot) => {
-          setQuery(
-            snapshot.docs.map((doc) => ({ id: doc.id, query: doc.data() }))
-          );
-        });
+    if (auth.currentUser != null) {
+      if (phase == "All") {
+        db.collection("Queris")
+          .orderBy("timestamp", "desc")
+          .onSnapshot((snapshot) => {
+            setQuery(
+              snapshot.docs.map((doc) => ({ id: doc.id, query: doc.data() }))
+            );
+          });
+      } else {
+        db.collection("Queris")
+          .where("status", "==", phase)
+          .orderBy("timestamp", "desc")
+          .onSnapshot((snapshot) => {
+            setQuery(
+              snapshot.docs.map((doc) => ({ id: doc.id, query: doc.data() }))
+            );
+          });
+      }
     } else {
-      db.collection("Queris")
-        .where("status", "==", phase)
-        .orderBy("timestamp", "desc")
-        .onSnapshot((snapshot) => {
-          setQuery(
-            snapshot.docs.map((doc) => ({ id: doc.id, query: doc.data() }))
-          );
-        });
+      history.push("/adminLogin");
     }
   }, [phase]);
 
