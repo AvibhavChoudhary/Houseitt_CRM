@@ -1,0 +1,22 @@
+.adminDashboard__logo {
+  object-fit: contain;
+  width: 200px;
+}
+
+.adminDashboard__navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.adminDashboard__filter {
+  margin-right: 50px;
+  align-items: center;
+  display: flex;
+}
+
+.adminDashboard__queryFilter {
+  margin-right: 40px;
+}
+
+.query__filter {
+  width: 200px;
+}

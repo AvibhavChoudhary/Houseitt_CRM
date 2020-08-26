@@ -1,0 +1,26 @@
+.query__main {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+.queryForm__logo {
+  object-fit: contain;
+  height: 100px;
+}
+
+.query__form {
+  margin-top: 50px;
+  align-self: center;
+}
+
+.query__input {
+  margin: auto;
+  width: 450px;
+}
+.query__data {
+  display: flex;
+  flex-direction: column;
+}
+.query__submitButton {
+  margin-top: 10px;
+}

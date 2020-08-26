@@ -1,0 +1,31 @@
+.query__status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.query__customerName {
+  margin-bottom: 5px;
+}
+.query__description {
+  margin-bottom: 5px;
+}
+
+.query__statusUpdateButton {
+  width: 200px;
+}
+
+.query__card {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.query__statusInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

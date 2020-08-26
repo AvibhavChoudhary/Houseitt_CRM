@@ -1,0 +1,26 @@
+.adminLogin__main {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+.adminLogin__logo {
+  object-fit: contain;
+  height: 100px;
+}
+
+.adminLogin__form {
+  margin-top: 50px;
+  align-self: center;
+}
+
+.adminLogin__input {
+  margin: auto;
+  width: 450px;
+}
+.admin__data {
+  display: flex;
+  flex-direction: column;
+}
+.adminLogin__submitButton {
+  margin-top: 10px;
+}
