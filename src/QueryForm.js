@@ -37,7 +37,7 @@ function QueryForm() {
     <div className="query__main">
       <img
         className="queryForm__logo"
-        src="https://houseitt.in/static/img/logos/Logo_main.png"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsqzmsPP2bWbXM7NhQ5TA-4redDqsWmr7ZXg&usqp=CAU"
         alt="House_itt"
       />
 

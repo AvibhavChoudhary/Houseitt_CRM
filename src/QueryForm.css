@@ -5,11 +5,11 @@
 }
 .queryForm__logo {
   object-fit: contain;
-  height: 100px;
+  height: 200px;
 }
 
 .query__form {
-  margin-top: 50px;
+  margin-top: 30px;
   align-self: center;
 }
 

@@ -4,8 +4,9 @@ check it out here: https://houseitt-crm.firebaseapp.com
 Youtube Demo: https://www.youtube.com/watch?v=XiSzgi2SmA8
 
 Here a home page will show up the query form for the customer which he/she needs to fill-up for registering an issue.
+User can file a complain herr:- https://houseitt-crm.firebaseapp.com/
 
-This same as an login feature for admin at https://houseitt-crm.firebaseapp.com/adminLogin where admins can login with their credentials and after signing in to the admin side you'll see admin dashboard.
+This is as an login feature for admin at https://houseitt-crm.firebaseapp.com/adminLogin where admins can login with their credentials and after signing in to the admin side you'll see admin dashboard.
 
 Admin dashboard will show all the complaints that are being filed by the customers aslo with their state status.
 
